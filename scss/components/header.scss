@@ -1,8 +1,8 @@
-.header {
+.header { 
   background: linear-gradient(
       90deg,
-      rgba(186, 133, 84, 0.7) 0.03%,
-      rgba(1, 1, 1, 0.7) 99.94%
+      rgba($color-brown-light, 0.7) 0.03%,
+      rgba($color-black, 0.7) 99.94%
     ),
     url(../images/header-background.jpg) center / cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
@@ -34,7 +34,7 @@
 }
 
 .title {
-  color: #ffffff;
+  color: $color-white;
   &__main {
     display: block;
     font-weight: 800;
