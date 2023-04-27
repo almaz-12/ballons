@@ -1,0 +1,13 @@
+.about {
+  padding-top: 8rem;
+
+  &__title {
+    margin-bottom: 8rem;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}

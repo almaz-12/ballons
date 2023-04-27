@@ -32,35 +32,3 @@
     text-align: center;
   }
 }
-
-.title {
-  color: $color-white;
-  &__main {
-    display: block;
-    font-weight: 800;
-    font-size: 5rem;
-    line-height: 6rem;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    animation-name: leftToRight;
-    animation-duration: 1.7s;
-    animation-delay: 1s;
-    animation-timing-function: ease;
-    backface-visibility: hidden;
-  }
-
-  &__secondary {
-    display: block;
-    font-weight: 100;
-    font-size: 4rem;
-    line-height: 4.8rem;
-    letter-spacing: 0.5rem;
-    animation-name: rightToLeft;
-    animation-duration: 1.7s;
-    animation-delay: 1s;
-    animation-timing-function: ease;
-    backface-visibility: hidden;
-    margin-bottom: 6.5rem;
-  }
-}
