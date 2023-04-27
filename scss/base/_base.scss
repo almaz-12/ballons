@@ -9,6 +9,9 @@ html {
 	font-size: 62.5%;
 }
 
+img {
+  max-width: 100%;
+}
 
 body {
 	font-family: "Lato", sans-serif;
@@ -25,7 +28,7 @@ body {
 }
 
 .container {
-	max-width: 1440px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
