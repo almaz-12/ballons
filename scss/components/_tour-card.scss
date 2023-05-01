@@ -9,7 +9,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    transition: all 2s;
+    transition: all 1s;
     backface-visibility: hidden;
     background: $color-white;
    
@@ -22,9 +22,29 @@
     }
 
     &_back {
+      display: flex;
+      flex-direction: column;
+      padding: 3rem;
+      align-items: center;
+      justify-content: space-around;
+      
       transform: rotateY(180deg);
       background: linear-gradient(120deg, $color-brown-light, #A14F03);
     }
+  }
+
+  &__text {
+    color: #ffffff;
+    text-transform: uppercase;
+    &_1 {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+    &_2{
+      font-size: 6rem;
+      font-weight: 500;      
+    }
+    
   }
 
   &:hover &__side_front {
