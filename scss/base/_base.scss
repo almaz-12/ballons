@@ -18,6 +18,11 @@ ul {
   margin: 0;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 body {
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
@@ -40,9 +45,7 @@ body {
 
 
 .btn {
-  &:link,
-  &:visited {
-    text-transform: uppercase;
+  text-transform: uppercase;
     text-decoration: none;
     color: $color-gray;
     padding: 1.5rem 4rem;
@@ -52,7 +55,6 @@ body {
     transition: all 0.3s;
     position: relative;
     font-size: 2rem;
-  }
 
   &:hover {
     transform: translateY(-4px);
