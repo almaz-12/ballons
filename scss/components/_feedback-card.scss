@@ -23,6 +23,18 @@
   &__image {
     transition: all .3s;
   }
+  
+  &:hover  {  
+    .feedback-card__image {
+      transform: scale(0.95);
+      filter: blur(0.3rem) brightness(70%);
+    }
+
+    .feedback-card__image-caption {
+      opacity: 1;
+      transform: translateY(-50%);
+    }      
+  }
 
   &__image-box {
     position: relative;
@@ -34,17 +46,6 @@
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
 
-    &:hover  {  
-      .feedback-card__image {
-        transform: scale(0.95);
-        filter: blur(0.3rem) brightness(70%);
-      }
-
-      .feedback-card__image-caption {
-        opacity: 1;
-        transform: translateY(-50%);
-      }      
-    }
   }
 
   &__image-caption {
