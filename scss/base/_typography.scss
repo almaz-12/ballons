@@ -121,4 +121,9 @@
     animation: btnToUp 0.5s ease-out 0.7s;
     animation-fill-mode: backwards;
   }
+
+  &_brown {
+    background: #A14F03;
+    color: #ffffff;
+  }
 }
