@@ -4,7 +4,7 @@
       rgba($color-brown-light, 0.7) 0.03%,
       rgba($color-black, 0.7) 99.94%
     ),
-    url(../images/header-background.jpg) center / cover no-repeat;
+    url(../assets/images/header-background.jpg) center / cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 
   &__logo {
