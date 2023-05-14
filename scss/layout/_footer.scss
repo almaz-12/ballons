@@ -12,5 +12,15 @@
 
   &__logo {
     width: 12rem;
+  }
 }
+.footer-nav {
+  &__list {
+    display: flex;
+    gap:5rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
+  }
 }

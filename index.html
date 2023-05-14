@@ -19,6 +19,22 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="menu">
+        <input class="menu__toggle" type="checkbox" id="toggle">
+        <label class="menu__button" for="toggle">
+          <span class="menu__icon"></span>
+        </label>
+        <div class="menu__bg"></div>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Скидки</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Лучшие туры</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Калькулятор цены</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Связаться с нами</a></li>
+          </ul>
+        </nav>
+      </div>
       <header class="header">
         <div class="header__inner">
           <img
@@ -33,8 +49,9 @@
                 >незабываемое приключение ждет вас</span
               >
             </h1>
-            <a href="#" class="btn btn_animated">наш каталог</a>
+            <a class="btn btn_animated" href="#">наш каталог</a>
           </div>
+          
         </div>
       </header>
       <main class="main">
@@ -114,7 +131,7 @@
                   различных в особенности же развитие различных
                 </p>
               </li>
-              <li class="features-list__item">
+              <li class="features-list__item" style="color: red;">
                 <i class="features-list__icon icon-4"></i>
                 <h3 class="content-title features-list__title">приключения</h3>
                 <p class="text">

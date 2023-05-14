@@ -1,10 +1,114 @@
-.footer-nav {
-  &__list {
+.menu {
+  &__bg {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background: radial-gradient($color-brown-light, $color-brown-dark);
+    position: fixed;
+    right: 6rem;
+    top: 6rem;
+    z-index: 100;
+    transition: all 0.7s;
+  }
+
+  &__button {
     display: flex;
-    gap:5rem;
+    justify-content: center;
+    align-items: center;
+    background: $color-white;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 200;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  &__toggle {
+    display: none;
+
+    &:checked ~ .menu__bg {
+      transform: scale(80);
+    }
+
+    &:checked + .menu__button .menu__icon {
+      height: 0;
+    }
+
+    &:checked + .menu__button .menu__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+    &:checked + .menu__button .menu__icon::after {
+      top: 0px;
+      transform: rotate(-135deg);
+    }
+  }
+
+  &__icon,
+  &__icon::after,
+  &__icon::before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: $color-black;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+
+  &__icon::after {
+    content: '';
+    left: 0;
+    top: -10px;
+  }
+  &__icon::before {
+    content: '';
+    left: 0;
+    top: 10px;
+  }
+
+  &__nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 4rem;
+    color: $color-white;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    font-weight: 300;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #ffffff 50%
+    );
+    background-size: 220%;
+    padding: 1rem 2rem;
+    transition: all 0.4s;
+    display: inline-block;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-position: 100%;
+    color: $color-brown-light;
+    transform: translateX(1rem);
   }
 }
