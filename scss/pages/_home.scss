@@ -8,7 +8,7 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem,1fr));
     gap: 6rem;
   }
 
@@ -120,13 +120,15 @@
 
 .reserve {
   padding: 10rem;
-  background: linear-gradient(90deg, #ba8554, #a14f03);
+  background: linear-gradient(90deg, $color-brown-light, $color-brown-dark);
+
+  @include responsive(small) {
+    padding: 10rem 2rem;
+  }
 }
 
 .booking {
-  padding-top: 5rem;
-  padding-left: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem;
   background: linear-gradient(
       115deg,
       rgba(255, 255, 255, 0.9) 0%,
