@@ -1,0 +1,24 @@
+{
+  "name": "ballons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch --update --style=expanded scss:styles",
+    "sass-prod": "sass --no-source-map --style=compressed scss:styles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almaz-12/ballons.git"
+  },
+  "author": "Almaz Khabibullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/almaz-12/ballons/issues"
+  },
+  "homepage": "https://github.com/almaz-12/ballons#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
